@@ -25,9 +25,11 @@ function Login() {
             alert("login succes")
             localStorage.setItem("token", response.data.token);
             navigate("/updatedelete")
+            console.log(response);
+
 
         } catch (error) {
-            console.log("something went rong");
+            console.log("something went rong", error);
 
 
         }
